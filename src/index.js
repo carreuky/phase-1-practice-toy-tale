@@ -40,7 +40,8 @@ fetch(' http://localhost:3000/toys/')
   card.appendChild(img)
   card.appendChild(p)
   card.appendChild(btn)
-  btn.addEventListener('click', ()=>{
+  btn.addEventListener('click', (e)=>{
+    e.preventDefault()
     data.likes ++;
     increaseLike(data)
     console.log(data)
